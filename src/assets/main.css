@@ -1,35 +1,27 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
-a,
-.green {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  list-style: none;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+:root {
+  --background-color: 238, 238, 238;
+  --font-color: 33, 47, 61;
+  --border-color: 98, 114, 84;
+  --item-color: 118, 136, 91;
+  --link-color: 98, 114, 84;
+  --bar-color: 118, 136, 91;
+  --font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+[data-theme='dark'] {
+  --font-color: 0, 0, 61;
+  --link-color: 0, 0, 61;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.container {
+  max-width: 1200px;
+  margin: auto;
 }

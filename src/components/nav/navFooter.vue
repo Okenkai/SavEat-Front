@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-  <main>
-    <p>hello world</p>
-  </main>
+  <footer></footer>
 </template>
+
+<style></style>
